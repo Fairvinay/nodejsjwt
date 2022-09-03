@@ -1,0 +1,48 @@
+POST http://localhost:3000/register 
+Content-Type: application/json 
+
+{ 
+  "email":"user3@example.com", 
+  "password": "Qwerty12!"
+
+} 
+
+###login 
+POST http://localhost:3000/login  HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "email": "example@example.com", 
+  "password": "Qwerty12!" 
+
+} 
+
+###login 
+POST http://localhost:3000/login  HTTP/1.1
+Content-Type: application/json
+
+{ 
+  "email": "user3@example.com", 
+  "password": "Qwerty12!" 
+
+} 
+
+
+### get user data(prtected route) 
+
+GET http://localhost:3000/user/info HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVhYzAxZWUwLWZjZTUtNDRmMS1hYThkLTBlNTJkOTk3NWYyYSIsInVzZXJuYW1lIjoiRGVtbyB1c2VybmFtZSA5YjUwMDI0MC00MTRlLTQxZTEtOWYwZS01NGNlOWU0YWNiYmQiLCJlbWFpbCI6InVzZXIzQGV4YW1wbGUuY29tIiwiaWF0IjoxNjM5Mjk5NzMyLCJleHAiOjE2MzkyOTk3OTJ9.wPMGgvt-r2dtApywVxTcmfF1WMcmBUXu62fqBr6aNxA
+
+## get Token
+
+GET https://developerapi.icicibank.com:8443/  HTTP/1.1
+
+{
+  "MobileNumber": "90404XXXXX",
+  "deviceId": "84521654864135",
+  "sequenceNumber": "ef1e92b4a01d4618a0eca5fdecc37ff23f3",
+  "channelCode": "IMobile",
+  "applicationId": "ghjuyu678854346",
+  "subType": "initial",
+  "challenge": "wUwDPglyJu9LOnkBAf4vxSpQgQZltcz7LWwEquhdm5kSQIk"
+}
